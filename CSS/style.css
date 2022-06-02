@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url("./responsive.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --grey-600: #4b5563;
+    --black: #111;
+    --slat-300: #d1d5db;
+    --font-family: 'Poppins', sans-serif;
+    --kanit-font-family: 'Kanit', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    font-family: var(--font-family);
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+label {
+    display: block;
+}
+
+main {
+    margin: 2rem;
+}
+
+/* Header Style */
+
+.header-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-logo {
+    font-family: 'Crimson Text', serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 0;
+}
+
+.first-letter {
+    font-size: 2rem;
+}
+
+.shipping-icon {
+    transform: scaleX(-1);
+}
+
+.header-user-action {
+    width: 37%;
+}
+
+.shipping {
+    text-align: end;
+    padding: 1rem 0;
+}
+
+.search-container {
+    position: relative;
+}
+
+.input-search {
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid;
+    padding: 0.7rem 0.4rem 0.7rem 0.5rem;
+}
+
+.search-icon {
+    position: absolute;
+    right: 9px;
+    top: 12px;
+}
+
+.menu-list {
+    padding: 0 0.5rem 0.5rem;
+    color: var(--grey-600);
+    margin-bottom: 0.2rem;
+}
+
+.menu-list:nth-of-type(2) {
+    border-right: 1px solid var(--grey-600);
+    border-left: 1px solid var(--grey-600);
+}
+
+.header-divider {
+    color: var(--black);
+    border-style: dotted;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-category-list {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-category {
+    padding: 0 2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: var(--grey-600);
+    border-right: 1px solid var(--grey-600);
+}
+
+.menu-category:last-child {
+    border: none;
+}
+
+
+/* Product Card and Filter Style */
+
+.product__container {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-self: start;
+    border-radius: 1px solid var(--grey);
+    padding: 0.5rem 2rem;
+    gap: 2rem;
+    background-color: var(--slat-300);
+    margin-top: 4.813rem;
+}
+
+.filter__head {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.8rem;
+}
+
+.filter__heading {
+    padding: 0.2rem 0;
+}
+
+.filter__input {
+    padding-top: 0.1rem;
+}
+
+.product-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 1rem;
+    max-width: 20rem;
+    text-align: center;
+    margin-inline: auto;
+    border: 0;
+    text-transform: uppercase;
+    border-bottom: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.25) 0%,
+            rgba(2, 0, 36, 0.8) 48%,
+            rgba(0, 0, 0, 0.25) 100%);
+    border-image-slice: 1;
+    border-radius: 5px;
+}
+
+.product {
+    width: 80vw;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.product__cards {
+    max-width: 50rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 3rem;
+    text-align: center;
+}
+
+.active {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 5px;
+}
+
+.heading-active {
+    background-color: var(--slat-300);
+    margin-top: 2px;
+    border-radius: 5px;
+}
+
+.product__image {
+    width: 100%;
+    height: 13rem;
+    object-fit: cover;
+    display: block;
+    background-color: var(--grey);
+    padding: 1rem;
+    position: relative;
+}
+
+.product__image>img {
+    object-fit: contain;
+}
+
+.product__subtext {
+    font-size: 0.8rem;
+    padding-left: 0.5rem;
+}
+
+
+/* Help Section style */
+
+.help-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--slat-300);
+    padding: 0 1rem;
+    position: relative;
+    height: 3.563rem;
+}
+
+.img-badge {
+    width: 6.25rem;
+    height: 6.25rem;
+}
+
+.text {
+    text-align: center;
+}
+
+.img {
+    width: 3.125rem;
+    height: 3.125rem;
+    margin: 0 0.5rem;
+}
+
+/* Footer Style */
+
+footer {
+    font-size: 16px;
+    margin: 0.1rem 0 1rem 0;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: var(--slat-300);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    flex-wrap: wrap;
+}
+
+.col-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 2px 0;
+}
+
+.social-media {
+    display: flex;
+    gap: 0.5em;
+    padding: 1rem 2rem;
+}
+
+.social-col-title {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.social-media {
+    justify-content: space-between;
+}
+
+.social-media-list {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social-media-list a {
+    display: flex;
+    border-radius: 0.3em;
+    padding-right: 1rem;
+    color: unset;
+}
+
+.social-icon {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+}
+
+.social:nth-child(1) {
+    color: #4267b2;
+}
+
+.social:nth-child(2) {
+    color: #00acee;
+}
+
+.social:nth-child(3) {
+    color: #e60023;
+}
+
+.subscribe-container {
+    display: inline;
+}
+
+.subscribe {
+    width: 65%;
+}
+
+.input-sub {
+    padding: 0.2rem;
+    width: 55%;
+    height: 2.188rem;
+}
+
+.btn-sub {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+}
+
+.legal-menu {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.legal-list {
+    padding: 0 1rem;
+    text-transform: uppercase;
+}
+
+.msg {
+    display: block;
+    text-align: center;
+    padding-top: 2px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+.legal-list:nth-child(1) {
+    border-right: 1px solid var(--grey-600);
+}

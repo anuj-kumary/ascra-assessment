@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothes Store</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <ul class="header-container">
+          <li class="menu-list">Welcome to Clothes shop</li>
+          <li class="menu-list">Sign in</li>
+          <li class="menu-list">Cart <small>(0)</small></li>
+        </ul>
+      </header>
+      <hr class="header-divider" />
+      <div class="header-main">
+        <div class="header-logo">
+          <a href="#"
+            ><span class="first-letter">C</span>lothes
+            <span class="first-letter">S</span>tore</a
+          >
+        </div>
+        <div class="header-user-action">
+          <p class="shipping">
+            <span><i class="shipping-icon fas fa-shipping-fast"></i></span>
+            Free Shipping
+          </p>
+          <div class="search-container">
+            <input
+              class="input-search"
+              type="search"
+              placeholder="Seacrh this site"
+            />
+            <i class="search-icon fas fa-search"></i>
+          </div>
+        </div>
+      </div>
+      <nav class="navigation-menu">
+        <ul class="menu-category-list">
+          <li class="menu-category">shop</li>
+          <li class="menu-category">measurement profile</li>
+          <li class="menu-category">customize</li>
+          <li class="menu-category">how it works</li>
+        </ul>
+      </nav>
+      <hr class="header-divider" />
+      <div class="product__container">
+        <aside class="filter">
+          <div class="filter__category">
+            <h4 class="filter__heading">Occasion</h4>
+            <div class="filter__checkbox">
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Dress Shirts</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Friday Casuals</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Sunday Brunches</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="filter__category">
+            <h4 class="filter__heading">Color</h4>
+            <div class="filter__checkbox">
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">White</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Pink</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Grey</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Black</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Red</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Blue</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="filter__category">
+            <h4 class="filter__heading">Pattern</h4>
+            <div class="filter__checkbox">
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Stripes</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Checks</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Plains</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="filter__category">
+            <h4 class="filter__heading">Fabrics</h4>
+            <div class="filter__checkbox">
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Plain</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Poplin</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Oxford</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Pinpoint</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Fil-a-fil</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Twill</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Herring bone</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Dobby</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="filter__category">
+            <h4 class="filter__heading">Collar</h4>
+            <div class="filter__checkbox">
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Classic</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Buttoned Down</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Spread</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Wide Spread</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Wine type</span>
+              </label>
+              <label class="filter__input">
+                <input type="checkbox" />
+                <span class="filter__desc">Banded</span>
+              </label>
+            </div>
+          </div>
+        </aside>
+
+        <main class="product">
+          <h2 class="product-heading">Dress shirts</h2>
+          <div class="product__cards">
+            <div class="product__card">
+              <div class="product__image active">
+                <img src="./images/product2.png" alt="i Mac" />
+              </div>
+              <div class="heading-active">
+                <h3 class="product__heading">Custom-Fit Checked Dress Shirt</h3>
+                <div class="product__price">Rs. 3000/-</div>
+              </div>
+            </div>
+
+            <div class="product__card">
+              <div class="product__image">
+                <img src="./images/product3.png" alt="i Mac" />
+              </div>
+              <h3 class="product__heading">Custom-Fit Checked Dress Shirt</h3>
+              <div class="product__price">Rs. 3000/-</div>
+            </div>
+
+            <div class="product__card">
+              <div class="product__image">
+                <img src="./images/product4.png" alt="i Mac" />
+              </div>
+              <h3 class="product__heading">Custom-Fit Checked Dress Shirt</h3>
+              <div class="product__price">Rs. 3000/-</div>
+            </div>
+
+            <div class="product__card">
+              <div class="product__image">
+                <img src="./images/product5.png" alt="i Mac" />
+              </div>
+              <h3 class="product__heading">Custom-Fit Checked Dress Shirt</h3>
+              <div class="product__price">Rs. 3000/-</div>
+            </div>
+
+            <div class="product__card">
+              <div class="product__image">
+                <img src="./images/product2.png" alt="i Mac" />
+              </div>
+              <h3 class="product__heading">Custom-Fit Checked Dress Shirt</h3>
+              <div class="product__price">Rs. 3000/-</div>
+            </div>
+
+            <div class="product__card">
+              <div class="product__image">
+                <img src="./images/product3.png" alt="i Mac" />
+              </div>
+              <h3 class="product__heading">Custom-Fit Checked Dress Shirt</h3>
+              <div class="product__price">Rs. 3000/-</div>
+            </div>
+
+            <div class="product__card">
+              <div class="product__image">
+                <img src="./images/product4.png" alt="i Mac" />
+              </div>
+              <h3 class="product__heading">Custom-Fit Checked Dress Shirt</h3>
+              <div class="product__price">Rs. 3000/-</div>
+            </div>
+
+            <div class="product__card">
+              <div class="product__image">
+                <img src="./images/product5.png" alt="i Mac" />
+              </div>
+              <h3 class="product__heading">Custom-Fit Checked Dress Shirt</h3>
+              <div class="product__price">Rs. 3000/-</div>
+            </div>
+
+            <div class="product__card">
+              <div class="product__image">
+                <img src="./images/product1.png" alt="i Mac" />
+              </div>
+              <h3 class="product__heading">Custom-Fit Checked Dress Shirt</h3>
+              <div class="product__price">Rs. 3000/-</div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </main>
+    <section>
+      <div class="advertisement">
+        <img src="./images/bg.png" alt="advertisement" />
+      </div>
+    </section>
+
+    <section class="help-container">
+      <img class="img-badge" src="./images/Badges.png" alt="badges" />
+      <p class="text">Need Help? Call Us On: +91 98204 16772</p>
+      <div class="payment-list">
+        <img
+          class="img"
+          src="./images/icons8-american-express-30.png"
+          alt="american express"
+        />
+        <img class="img" src="./images/google-pay.png" alt="google pay" />
+        <img class="img" src="./images/mastercard.png" alt="mastercard" />
+        <img class="img" src="./images/visa-credit-card.png" alt="visa" />
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="row">
+        <span class="col">
+          <nav class="col-list">
+            <ul>
+              <li class="col-title"><a href="#">why 16 sittches</a></li>
+              <li class="col-title"><a href="#">about us</a></li>
+              <li class="col-title"><a href="#">how it works</a></li>
+              <li class="col-title"><a href="#">our shirts</a></li>
+            </ul>
+          </nav>
+        </span>
+
+        <span class="col">
+          <nav class="col-list">
+            <ul>
+              <li class="col-title"><a href="#">terms of use</a></li>
+              <li class="col-title"><a href="#">privacy policy</a></li>
+              <li class="col-title"><a href="#">faqs</a></li>
+              <li class="col-title">
+                <a href="#">return & delivery policy</a>
+              </li>
+            </ul>
+          </nav>
+        </span>
+
+        <span class="col">
+          <nav class="col-list">
+            <ul>
+              <li class="col-title"><a href="#">style guide</a></li>
+              <li class="col-title"><a href="#">fabrics manual</a></li>
+              <li class="col-title"><a href="#">measurement profile</a></li>
+              <li class="col-title"><a href="#">size chart</a></li>
+            </ul>
+          </nav>
+        </span>
+
+        <span class="col">
+          <nav class="col-list">
+            <ul>
+              <li class="col-title"><a href="#">gift voucher</a></li>
+              <li class="col-title">
+                <a href="#">contact a travellin tailor</a>
+              </li>
+              <li class="col-title"><a href="#">order fabric swatches</a></li>
+              <li class="col-title"><a href="#">contatc us</a></li>
+            </ul>
+          </nav>
+        </span>
+      </div>
+      <div>
+        <div class="social-media">
+          <div class="social-container">
+            <h3 class="social-col-title">Connect with us</h3>
+            <ul class="social-media-list">
+              <li class="social">
+                <a href="#" class="facebook"
+                  ><i class="social-icon fab fa-facebook-square"></i
+                ></a>
+              </li>
+              <li class="social">
+                <a href="#" class="twitter">
+                  <i class="social-icon fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="social">
+                <a href="#" class="instagram">
+                  <i class="social-icon fab fa-pinterest-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="instagram">
+                  <i class="social-icon fab fa-wikipedia-w"></i>
+                </a>
+              </li>
+              <li class="social">
+                <a href="#" class="instagram">
+                  <i class="social-icon fab fa-instagram-square"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="subscribe">
+            <p class="subscribe-container">Subscribe to our newsletter</p>
+            <input class="input-sub" type="text" />
+            <button class="btn-sub">send</button>
+            <small class="msg"
+              >* Your personal information will not be shared with third
+              parties</small
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <hr class="header-divider" />
+    <section class="footer-legal">
+      <ul class="legal-menu">
+        <li class="legal-list">copyright © 16sittches 2013</li>
+        <li class="legal-list">all rights reserved</li>
+      </ul>
+    </section>
+  </body>
+</html>

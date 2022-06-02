@@ -1,0 +1,25 @@
+@media screen and (max-width: 1000px) {
+    .product__cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 10px;
+    }
+
+    .product {
+        margin-left: 1rem;
+    }
+
+    .product__cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .payment-list {
+        display: none;
+    }
+}
